@@ -42,17 +42,17 @@ describe("Funciones en JavaScript", () => {
     })
     test("Las funciones pueden tener múltiples parámetros", () =>{
         let userName = "Ariana28";
-    let userAge = 38;
-    let userEmail = "ariana_28@gmail.com";
-    let userLocation = "Barcelona"
-    let userIsRegistered = true;
-    let password = "p4s$w0rDs3guR0";
+        let userAge = 38;
+        let userEmail = "ariana_28@gmail.com";
+        let userLocation = "Barcelona"
+        let userIsRegistered = true;
+        let password = "p4s$w0rDs3guR0";
 
-    function userAuth(userName, userEmail, password) {
-        return `Welcome ${userName}, your email is ${userEmail} and your password is ${password}.`
-    } 
+        function userAuth(userName, userEmail, password) {
+            return `Welcome ${userName}, your email is ${userEmail} and your password is ${password}.`
+        } 
 
-    expect(userAuth(userName, userEmail, password)).toEqual("Welcome Ariana28, your email is ariana_28@gmail.com and your password is p4s$w0rDs3guR0.")
+        expect(userAuth(userName, userEmail, password)).toEqual("Welcome Ariana28, your email is ariana_28@gmail.com and your password is p4s$w0rDs3guR0.")
 
     })
 
