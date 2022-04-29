@@ -5,7 +5,9 @@ describe("Funciones en JavaScript", () => {
         let name = "Rosa";
 
         // Escribe aquí tu funcion "saludar"
-        
+        function saludar(name){
+            return `Hola,  ${name}`;//"Hola, " + name;
+        }
 
         expect(saludar(name)).toBe("Hola, Rosa");
     })
@@ -16,7 +18,9 @@ describe("Funciones en JavaScript", () => {
         let num2 = 10;
 
         // Escribe aquí tu función "suma"
-        
+        function suma(num1, num2){
+            return num1 + num2;
+        }
 
         expect(suma(num1, num2)).toEqual(27);
     })
@@ -30,9 +34,26 @@ describe("Funciones en JavaScript", () => {
         let rainProbability = "10%";
 
         // Escribe aquí tu función "weatherReport" (fíjate en el 'expect' para saber qué debe retornar esta función).
-        
+        function weatherReport(userName, name, city, weather, rainProbability){
+            return `Hola ${name} (${userName}), hoy en ${city} el tiempo es ${weather} y las probabilidades de lluvia son del ${rainProbability}.`
+        }
 
         expect(weatherReport(userName, name, city, weather, rainProbability)).toEqual("Hola Ada Martín (ada89), hoy en Las Vegas el tiempo es soleado y las probabilidades de lluvia son del 10%.");
+    })
+    test("Las funciones pueden tener múltiples parámetros", () =>{
+        let userName = "Ariana28";
+    let userAge = 38;
+    let userEmail = "ariana_28@gmail.com";
+    let userLocation = "Barcelona"
+    let userIsRegistered = true;
+    let password = "p4s$w0rDs3guR0";
+
+    function userAuth(userName, userEmail, password) {
+        return `Welcome ${userName}, your email is ${userEmail} and your password is ${password}.`
+    } 
+
+    expect(userAuth(userName, userEmail, password)).toEqual("Welcome Ariana28, your email is ariana_28@gmail.com and your password is p4s$w0rDs3guR0.")
+
     })
 
 })
