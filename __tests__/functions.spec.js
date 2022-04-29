@@ -6,9 +6,9 @@ describe("Funciones en JavaScript", () => {
 
         // Escribe aquí tu funcion "saludar"
         function saludar(name){
-            return `Hola,  ${name}`;//"Hola, " + name;
+            return `Hola,  ${name}`;//"Hola, " + name ;
         }
-
+       
         expect(saludar(name)).toBe("Hola, Rosa");
     })
 
