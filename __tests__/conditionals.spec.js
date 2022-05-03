@@ -10,7 +10,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() (los "???") para que pase el test
-        expect(result).toEqual();
+        expect(result).toEqual("Lara tiene un nombre corto");
     })
 
 
@@ -26,7 +26,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual(???);
+        expect(result).toEqual("Olga es mayor de edad.");
     })
 
 
@@ -43,7 +43,7 @@ describe("Condicionales en JavaScript", () => {
         }
 
         // Edita el .toEqual() para que pase el test
-        expect(result).toEqual(???);
+        expect(result).toEqual("Pizza con piña");
     })
 })
 
@@ -54,10 +54,14 @@ describe("Escribe tus propios tests", () => {
         let greeting;
 
         // Escribe aquí tu condicional contemplando las 2 casuísticas. En este caso, el saludo debe ser "¡Hola!" o bien "Hello!".
-        
+        /*if () {
+            result = ``
+        } else {
+            result = ``
+        }
 
         expect(greeting).toBe("Hello!");
-    })
+    })*/
 
 
     test("Para saludar a alguien hay que saber la hora. Si es antes de las 12, le decimos 'Buenos días', si es después de las 12 pero antes de las 20, le decimos 'Buenas tardes', y si es después de las 20, le decimos 'Buenas noches'", () => {
@@ -69,5 +73,5 @@ describe("Escribe tus propios tests", () => {
 
         expect(saludo).toEqual("Buenas tardes");
     })
-
-})
+    })
+});
