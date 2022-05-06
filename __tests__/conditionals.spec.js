@@ -60,6 +60,11 @@ describe("Escribe tus propios tests", () => {
             result = greeting= "Hello!";
         }
 
+        /*
+        Other option: Operador terniario (binario)
+            country === "UK" ? greeting = "Hello!" : greeting= "¡Hola!";
+        */
+
         expect(greeting).toBe("Hello!");
     })
 
@@ -69,12 +74,14 @@ describe("Escribe tus propios tests", () => {
         let saludo;
         
         // Escribe aquí tu condicional contemplando las 3 casuísticas
-        if (hour<12) {
-            result = saludo= "Buenos días";
+        if (hour>=6 && hour<=12) {//Es necesario delimitar los periodos de tiempos
+            saludo= "Buenos días";
+        } else if (hour>12 && hour<=20) {
+            saludo= "Buenas tardes";
         } else {
-            result = saludo= "Buenas tardes";
+            saludo = "Buenas noches";
         }
-
+        
         expect(saludo).toEqual("Buenas tardes");
     })
 });
